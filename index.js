@@ -36,7 +36,7 @@ app.get('/home',(req,res)=>{
     const name = req.query.firstName || 'emon';
     res.send(`welcome ${name}`)
 })
-//req.query value is after(?value)  and req.params value is after the website like(www.---- .con/value)
+//req.query value is after(?value)  and req.params value is after the website like(www.---- .con/?value)
 app.get('/greet/:name',(req,res)=>{
     const name = req.params.name ;
     const massage = {
